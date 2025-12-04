@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: max-content;
+    min-width: min-content;
+}
+
+:root {
+    --main-header-color: yellow;
+    --secundary-header-color: gold;
+}
+
+/*IDs*/
+#body-container {
+    position: static;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Header*/
+#header-container {
+    position: fixed;
+    height: 5rem;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    flex: 0 1 auto;
+    background-color: var(--main-header-color);
+    border-bottom: 1px solid var(--secundary-header-color);
+    z-index: 1000;
+}
+
+#global-header {
+    position: inherit;
+    left: 0;
+    top: 0;
+    height: 3rem;
+    width: inherit;
+    display: inherit;
+    box-sizing: inherit;
+    margin: 1rem 0rem;
+    background-color: green;
+}
+
+#global-header:first-child {
+    padding: 0rem 1rem;
+    display: inline-flex;
+}
+
+#global-header-container {
+    height: max-content;
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    background-color: red;
+}
+
+#global-header-start,
+#global-header-center,
+#global-header-end {
+    height: 100%;
+    width: 200px;
+    background-color: cornflowerblue;
+}
+
+#global-header-start {
+    justify-self: flex-start;
+}
+
+#global-header-center {
+    justify-self: center;
+}
+
+#global-header-end {
+    justify-self: flex-end;
+}
+
+/*Content*/
+#content-container {
+    position: inherit;
+    height: calc(100% - 5rem);
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    flex: 1 1 auto;
+}
