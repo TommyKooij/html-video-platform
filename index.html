@@ -1,25 +1,83 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Test</title>
-        <link rel="stylesheet" href="css/styles.css" type="text/css" />
-    </head>
-    <body>
-        <div id="body-container">
-            <!--Header-->
-            <div id="header-container">
-                <header id="global-header">
-                    <div id="global-header-container">
-                        <div id="global-header-start">lol</div>
-                        <div id="global-header-center">lol</div>
-                        <div id="global-header-end">lol</div>
-                    </div>
-                </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Test</title>
+    <link
+      rel="stylesheet"
+      href="css/styles.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div id="body-container">
+      <!--Header-->
+      <div id="header-container">
+        <header id="global-header">
+          <div id="global-header-container">
+            <!-- Logo -->
+            <div id="global-header-start">
+              <div id="logo-container">
+                <a href="index.html">
+                  <span id="logo-icon">
+                    <img
+                      src="/images/banana-icon.svg"
+                      alt="Bananza"
+                    />
+                    <h2>Bananza</h2>
+                  </span>
+                </a>
+              </div>
             </div>
-            <!--Content-->
-            <div id="content-container"></div>
+
+            <!-- Searchbar -->
+            <div id="global-header-center">
+              <div id="search-container">
+                <form action="">
+                  <input
+                    type="text"
+                    placeholder="Search..."
+                    name="search"
+                  />
+                  <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+              </div>
+            </div>
+
+            <!-- Account -->
+            <div id="global-header-end">
+              <div id="account-container">
+                <button>Sign Up</button>
+                <button>Log In</button>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+      <!--Content-->
+      <div id="content-container">
+        <!-- Sidebar -->
+        <div id="sidebar">
+          <div id="sidebar-container">
+            <span class="sidebar-item">
+              <i class="sidebar-item-icon"></i>
+              <p class="sidebar-item-text"></p>
+            </span>
+          </div>
         </div>
-    </body>
+        <!-- Main Content -->
+        <main id="main-content">
+          <div id="main-content-container"></div>
+        </main>
+      </div>
+    </div>
+  </body>
 </html>
