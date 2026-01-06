@@ -6,15 +6,28 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Test</title>
+    <title>Bananza</title>
     <link
       rel="stylesheet"
       href="css/styles.css"
       type="text/css"
     />
     <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&family=Hanalei&family=Space+Mono&family=Roboto"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
     />
   </head>
   <body>
@@ -47,7 +60,11 @@
                     placeholder="Search..."
                     name="search"
                   />
-                  <button type="submit"><i class="fa fa-search"></i></button>
+                  <button type="submit"
+                    ><span class="material-symbols-outlined">
+                      search
+                    </span></button
+                  >
                 </form>
               </div>
             </div>
@@ -67,16 +84,121 @@
         <!-- Sidebar -->
         <div id="sidebar">
           <div id="sidebar-container">
-            <span class="sidebar-item">
-              <i class="sidebar-item-icon"></i>
-              <p class="sidebar-item-text"></p>
-            </span>
+            <div class="sidebar-section">
+              <span class="sidebar-item">
+                <i class="sidebar-item-icon"
+                  ><span class="material-symbols-outlined">
+                    account_circle
+                  </span></i
+                >
+                <p class="sidebar-item-text">Account</p>
+              </span>
+              <span class="sidebar-item">
+                <i class="sidebar-item-icon"
+                  ><span class="material-symbols-outlined">
+                    subscriptions
+                  </span></i
+                >
+                <p class="sidebar-item-text">Subscriptions</p>
+              </span>
+              <span class="sidebar-item">
+                <i class="sidebar-item-icon"
+                  ><span class="material-symbols-outlined">
+                    video_library
+                  </span></i
+                >
+                <p class="sidebar-item-text">Playlists</p>
+              </span>
+              <span class="sidebar-item">
+                <i class="sidebar-item-icon"
+                  ><span class="material-symbols-outlined"> history </span></i
+                >
+                <p class="sidebar-item-text">History</p>
+              </span>
+            </div>
+            <div class="sidebar-section">
+              <span class="sidebar-item">
+                <i class="sidebar-item-icon"
+                  ><span class="material-symbols-outlined">
+                    music_note_2
+                  </span></i
+                >
+                <p class="sidebar-item-text">Music</p>
+              </span>
+              <span class="sidebar-item">
+                <i class="sidebar-item-icon"
+                  ><span class="material-symbols-outlined"> movie </span></i
+                >
+                <p class="sidebar-item-text">Clips</p>
+              </span>
+              <span class="sidebar-item">
+                <i class="sidebar-item-icon"
+                  ><span class="material-symbols-outlined">
+                    videogame_asset
+                  </span></i
+                >
+                <p class="sidebar-item-text">Gaming</p>
+              </span>
+              <span class="sidebar-item">
+                <i class="sidebar-item-icon"
+                  ><span class="material-symbols-outlined">
+                    sports_cricket
+                  </span></i
+                >
+                <p class="sidebar-item-text">Sports</p>
+              </span>
+              <span class="sidebar-item">
+                <i class="sidebar-item-icon"
+                  ><span class="material-symbols-outlined"> mic </span></i
+                >
+                <p class="sidebar-item-text">Podcasts</p>
+              </span>
+            </div>
+            <div class="sidebar-section">
+              <span class="sidebar-item">
+                <i class="sidebar-item-icon"
+                  ><span class="material-symbols-outlined"> settings </span></i
+                >
+                <p class="sidebar-item-text">Settings</p>
+              </span>
+              <span class="sidebar-item">
+                <i class="sidebar-item-icon"
+                  ><span class="material-symbols-outlined">
+                    bug_report
+                  </span></i
+                >
+                <p class="sidebar-item-text">Report</p>
+              </span>
+              <span class="sidebar-item">
+                <i class="sidebar-item-icon"
+                  ><span class="material-symbols-outlined"> help </span></i
+                >
+                <p class="sidebar-item-text">Help</p>
+              </span>
+              <span class="sidebar-item">
+                <i class="sidebar-item-icon"
+                  ><span class="material-symbols-outlined"> info </span></i
+                >
+                <p class="sidebar-item-text">About</p>
+              </span>
+            </div>
           </div>
         </div>
 
         <!-- Main Content -->
         <main id="main-content">
-          <div id="main-content-container"></div>
+          <div id="main-content-container">
+            <div class="main-grid-item">
+              <img
+                src=""
+                alt="Default video image"
+              />
+              <p>Default video title</p>
+            </div>
+            <div class="main-grid-item">Hallo</div>
+            <div class="main-grid-item">Hallo</div>
+            <div class="main-grid-item">Hallo</div>
+          </div>
         </main>
       </div>
     </div>
