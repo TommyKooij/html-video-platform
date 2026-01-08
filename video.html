@@ -14,7 +14,7 @@
     />
     <link
       rel="stylesheet"
-      href="css/styles-home.css"
+      href="css/styles-video.css"
       type="text/css"
     />
     <link
@@ -193,98 +193,41 @@
         <!-- Main Content -->
         <main id="main-content">
           <div id="main-content-container">
-            <a href="/video.html">
-              <div class="main-grid-item">
-                <div class="grid-item-top">
-                  <img
-                    src=""
-                    alt="Default video image"
-                  />
-                  <p class="grid-item-top-time">10:00</p>
-                </div>
-                <div class="grid-item-bottom">
+            <div id="main-content-container-item">
+              <video
+                width="1080px"
+                height="720px"
+                controls
+                >Video could not be loaded</video
+              >
+              <p id="item-title">Default title</p>
+              <div id="item-info">
+                <div id="item-channel">
                   <span class="material-symbols-outlined">
                     account_circle
                   </span>
-                  <div class="grid-item-bottom-info">
-                    <p class="grid-item-bottom-title">Default video title</p>
-                    <p class="grid-item-bottom-channel">Default channel name</p>
-                    <p class="grid-item-bottom-stats">
-                      100 views | Uploaded: 12 hours ago
-                    </p>
+                  <p id="item-channel-name">Default channel name</p>
+                  <button id="item-channel-btn">Subscribe</button>
+                </div>
+                <div id="item-stats">
+                  <div id="like-dislike">
+                    <span class="material-symbols-outlined btn">
+                      thumb_up
+                    </span>
+                    <span class="material-symbols-outlined btn">
+                      thumb_down
+                    </span>
                   </div>
-                </div>
-              </div>
-            </a>
-            <a href="/video.html">
-              <div class="main-grid-item">
-                <div class="grid-item-top">
-                  <img
-                    src=""
-                    alt="Default video image"
-                  />
-                  <p class="grid-item-top-time">10:00</p>
-                </div>
-                <div class="grid-item-bottom">
-                  <span class="material-symbols-outlined">
-                    account_circle
+                  <span class="material-symbols-outlined btn"> share </span>
+                  <span class="material-symbols-outlined btn">
+                    bookmark_heart
                   </span>
-                  <div class="grid-item-bottom-info">
-                    <p class="grid-item-bottom-title">Default video title</p>
-                    <p class="grid-item-bottom-channel">Default channel name</p>
-                    <p class="grid-item-bottom-stats">
-                      100 views | Uploaded: 12 hours ago
-                    </p>
-                  </div>
                 </div>
               </div>
-            </a>
-            <a href="/video.html">
-              <div class="main-grid-item">
-                <div class="grid-item-top">
-                  <img
-                    src=""
-                    alt="Default video image"
-                  />
-                  <p class="grid-item-top-time">10:00</p>
-                </div>
-                <div class="grid-item-bottom">
-                  <span class="material-symbols-outlined">
-                    account_circle
-                  </span>
-                  <div class="grid-item-bottom-info">
-                    <p class="grid-item-bottom-title">Default video title</p>
-                    <p class="grid-item-bottom-channel">Default channel name</p>
-                    <p class="grid-item-bottom-stats">
-                      100 views | Uploaded: 12 hours ago
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </a>
-            <a href="/video.html">
-              <div class="main-grid-item">
-                <div class="grid-item-top">
-                  <img
-                    src=""
-                    alt="Default video image"
-                  />
-                  <p class="grid-item-top-time">10:00</p>
-                </div>
-                <div class="grid-item-bottom">
-                  <span class="material-symbols-outlined">
-                    account_circle
-                  </span>
-                  <div class="grid-item-bottom-info">
-                    <p class="grid-item-bottom-title">Default video title</p>
-                    <p class="grid-item-bottom-channel">Default channel name</p>
-                    <p class="grid-item-bottom-stats">
-                      100 views | Uploaded: 12 hours ago
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </a>
+              <div id="item-description"> Hallo </div>
+              <p>Hallo</p>
+            </div>
+            <div id="main-content-container-list"></div>
           </div>
         </main>
       </div>

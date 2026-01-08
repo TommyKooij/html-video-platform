@@ -1,0 +1,77 @@
+/* IDs */
+#main-content-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+#main-content-container-item {
+  padding: 1rem 2rem;
+}
+
+#main-content-container-list {
+  width: 350px;
+  height: 100%;
+  background-color: aquamarine;
+}
+
+#item-title {
+  font-size: larger;
+  font-weight: bold;
+}
+
+#item-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+#item-channel {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+#item-channel-name {
+  padding: 0em 0.5em;
+  font-size: 0.9rem;
+}
+
+#item-channel-btn {
+  padding: 0.5em;
+  margin: 1em;
+  border: 1px solid black;
+  border-radius: 0.7em;
+}
+
+#item-stats {
+  width: 170px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+#item-description {
+  height: auto;
+  width: 100%;
+  padding: 0.5em;
+  background-color: chocolate;
+}
+
+/* Classes */
+.btn {
+  padding: 0.2em;
+  background-color: #9b9b9b;
+  border-radius: 1em;
+}

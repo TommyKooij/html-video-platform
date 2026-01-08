@@ -8,11 +8,14 @@ body {
   font-family: "Roboto", sans-serif;
   min-height: max-content;
   min-width: min-content;
+  height: 100%;
 }
 
 :root {
   --main-header-color: yellow;
   --secundary-header-color: gold;
+  --main-font-color: black;
+  --secundary-font-color: #ccc;
 }
 
 /* IDs */
@@ -213,17 +216,8 @@ body {
   background-color: bisque;
 }
 
-#main-content-container {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  padding: 1rem;
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  column-gap: 2rem;
-}
-
 /* Classes */
+/* Sidebar Item */
 .sidebar-item {
   width: 100%;
   display: flex;
@@ -241,26 +235,4 @@ body {
 
 .sidebar-item * {
   padding: 0.2rem 0.26rem;
-}
-
-.main-grid-item {
-  height: 300px;
-  width: auto;
-  background-color: aqua;
-}
-
-.main-grid-item:hover {
-  cursor: pointer;
-}
-
-.main-grid-item img {
-  min-height: 80%;
-  width: auto;
-}
-
-.main-grid-item p {
-  min-height: 20%;
-  width: auto;
-  padding: 0.2rem;
-  background-color: violet;
 }

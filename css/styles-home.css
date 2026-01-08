@@ -1,0 +1,87 @@
+/* IDs */
+#main-content-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  column-gap: 2rem;
+}
+
+#main-content-container a {
+  text-decoration: none;
+}
+
+/* Classes */
+/* Main Grid Item */
+.main-grid-item {
+  height: 330px;
+  width: auto;
+  border-radius: 1rem;
+  overflow: hidden;
+  color: var(--main-font-color);
+  background-color: aqua;
+}
+
+.main-grid-item:hover {
+  cursor: pointer;
+}
+
+.grid-item-top {
+  position: relative;
+  height: 80%;
+  width: 100%;
+  background-color: brown;
+}
+
+.grid-item-top img {
+  max-height: 100%;
+  max-width: auto;
+}
+
+.grid-item-top-time {
+  right: 1rem;
+  bottom: 1rem;
+  position: absolute;
+  padding: 0.1em;
+  background-color: rgba(225, 225, 225, 0.5);
+  border-radius: 0.2em;
+  z-index: 100;
+}
+
+.grid-item-bottom {
+  min-height: 20%;
+  width: inherit;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: violet;
+}
+
+.grid-item-bottom span {
+  font-size: 32px;
+  padding-right: 0.3rem;
+  background-color: purple;
+}
+
+.grid-item-bottom-info {
+  height: auto;
+  width: 100%;
+  padding-left: 0.3em;
+  padding-bottom: 0.2em;
+  background-color: blueviolet;
+}
+
+.grid-item-bottom-title {
+  font-size: 1.2rem;
+}
+
+.grid-item-bottom-channel,
+.grid-item-bottom-stats {
+  font-size: 0.8rem;
+  color: var(--secundary-font-color);
+}
