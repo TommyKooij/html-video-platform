@@ -1,7 +1,8 @@
 /* IDs */
 #main-content-container {
   position: relative;
-  height: 100%;
+  min-height: max-content;
+  height: inherit;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -15,8 +16,11 @@
 }
 
 #main-content-container-list {
-  width: 350px;
-  height: 100%;
+  right: 0;
+  width: 380px;
+  min-height: 100%;
+  height: inherit;
+  position: fixed;
   background-color: aquamarine;
 }
 
@@ -66,7 +70,18 @@
   height: auto;
   width: 100%;
   padding: 0.5em;
-  background-color: chocolate;
+  background-color: rgba(200, 200, 200, 0.5);
+  border-radius: 0.5rem;
+}
+
+#item-comment-section {
+  height: max-content;
+  width: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
 
 /* Classes */
@@ -74,4 +89,89 @@
   padding: 0.2em;
   background-color: #9b9b9b;
   border-radius: 1em;
+}
+
+.comment {
+  height: auto;
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 0.3rem 0.7rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: coral;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.comment span {
+  margin-right: 0.6rem;
+}
+
+.comment-user-name {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.comment-main-text {
+  padding-top: 0.18em;
+}
+
+.comment-upload-date {
+  font-size: 0.8rem;
+  color: var(--secundary-font-color);
+}
+
+/* Video */
+.video-container {
+  position: relative;
+  margin: 0.5rem 0rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: deeppink;
+}
+
+.video-container:hover {
+  cursor: pointer;
+}
+
+.video-image {
+  position: relative;
+  min-height: 100px;
+  min-width: calc(height * (16 / 9));
+  background-color: forestgreen;
+}
+
+.video-length {
+  bottom: 0;
+  left: 6.5rem;
+  position: absolute;
+  height: auto;
+  margin-bottom: 0.3em;
+  padding: 0.3em;
+  background-color: rgba(200, 200, 200, 0.5);
+  border-radius: 0.5em;
+  z-index: 1;
+}
+
+.video-text {
+  padding-left: 0.5em;
+}
+
+.video-title {
+  font-weight: bold;
+}
+
+.video-account {
+  font-size: 0.8rem;
+}
+
+.video-upload-date {
+  font-size: 0.8rem;
+  color: var(--secundary-font-color);
 }

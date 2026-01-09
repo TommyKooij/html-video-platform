@@ -3,21 +3,23 @@
   position: relative;
   height: 100%;
   width: 100%;
-  padding: 1rem;
+  padding: 1rem 2rem;
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: 390px 390px 390px 390px;
   column-gap: 2rem;
 }
 
 #main-content-container a {
+  height: fit-content;
   text-decoration: none;
 }
 
 /* Classes */
 /* Main Grid Item */
 .main-grid-item {
+  position: relative;
   height: 330px;
-  width: auto;
+  min-width: calc(height * (16 / 9));
   border-radius: 1rem;
   overflow: hidden;
   color: var(--main-font-color);
